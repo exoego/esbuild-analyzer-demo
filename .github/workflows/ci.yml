@@ -21,6 +21,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: exoego/esbuild-bundle-analyze-action@latest
+      - uses: exoego//esbuild-bundle-analysis-action@latest
         with:
           metafiles: "out/meta.json"
