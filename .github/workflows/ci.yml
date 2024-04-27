@@ -9,6 +9,11 @@ on:
     paths-ignore:
       - '*.md'
 
+permissions:
+  contents: read # for checkout repository
+  actions: read # for fetching base branch bundle stats
+  pull-requests: write # for comments
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,6 +26,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: exoego/esbuild-bundle-analyze-action@latest
+      - uses: exoego//esbuild-bundle-analysis-action@main
         with:
           metafiles: "out/meta.json"
