@@ -29,3 +29,4 @@ jobs:
       - uses: exoego/esbuild-bundle-analyzer@main
         with:
           metafiles: "out/meta.json"
+          skip_comment_if_empty: true
