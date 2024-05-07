@@ -29,3 +29,4 @@ jobs:
       - uses: exoego/esbuild-bundle-analyzer@main
         with:
           metafiles: "out/meta.json"
+          top_n_largest_paths: "10"
