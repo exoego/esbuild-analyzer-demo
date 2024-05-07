@@ -2,7 +2,7 @@ import {writeFileSync} from "node:fs";
 import {build} from "esbuild";
 
 const result = await build({
-    entryPoints: [`./src/alpha.ts`, `./src/beta.ts`],
+    entryPoints: ['./src/alpha.ts', './src/beta.ts', './src/gamma.ts'],
     outdir: `out`,
     format: "esm",
     metafile: true,
