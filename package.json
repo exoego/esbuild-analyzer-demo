@@ -5,8 +5,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.564.0",
-    "hono": "^4.2.8"
+    "@aws-sdk/client-dynamodb": "^3.588.0",
+    "hono": "^4.4.2"
   },
   "devDependencies": {
     "esbuild": "^0.20.2",
