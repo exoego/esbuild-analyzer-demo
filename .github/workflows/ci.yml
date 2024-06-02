@@ -2,12 +2,8 @@ name: CI
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '*.md'
-  pull_request:
+  pull_request_target:
     branches: [main]
-    paths-ignore:
-      - '*.md'
 
 permissions:
   contents: read # for checkout repository
